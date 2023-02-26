@@ -1,0 +1,125 @@
+/*****************************************************COLORS*****************************************************/
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/*****************************************************SELECTORS*****************************************************/
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url("images/bg-mobile.svg");
+    min-height: 100vh;
+    background-size:100% auto;
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: Poppins, sans-serif;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+p {
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+/*************************************************CLASS SELECTORS**************************************************/
+.button {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 0.8em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: var(--violet);
+    display: inline-block;
+    filter: drop-shadow(0px 3px 4px hsl(257, 40%, 29%));
+    padding: 10px 70px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.button:hover, button:active {
+    background-color: var(--soft-magenta);
+    color: white;
+}
+
+.logo {
+    height: auto;
+    margin: 30px;
+    width: 30%;
+}
+
+.flex {
+    display: flex;
+    gap: 0rem;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+}
+
+.mockups {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.textbox {
+    max-width: 100%;
+    margin: 10px;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.socialmedia img {
+    height: auto;
+    width: 35px;
+    margin: 10px;
+}
+
+.socialmedia img:hover, .socialmedia img:active {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/*************************************************MEDIA QUERIES**************************************************/
+
+@media (min-width: 800px) {
+    body {
+        background-image: url("images/bg-desktop.svg");
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        margin: 30px 70px;
+        width: 15%;
+    }
+    .flex {
+        text-align: left;
+        gap: 2rem;
+        margin: 50px;
+        flex-direction: row;
+    }
+
+    .socialmedia {
+        margin-right: 70px;
+        justify-content: end;
+    }
+
+}
